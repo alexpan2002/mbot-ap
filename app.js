@@ -36,7 +36,7 @@ const APP_SECRET = (process.env.MESSENGER_APP_SECRET) ?
   config.get('appSecret');
 
 // Arbitrary value used to validate a webhook
-const VALIDATION_TOKEN ='mbot_very_token'// (process.env.MESSENGER_VALIDATION_TOKEN) ?
+const VALIDATION_TOKEN = (process.env.MESSENGER_VALIDATION_TOKEN) ?
   (process.env.MESSENGER_VALIDATION_TOKEN) :
   config.get('validationToken');
 

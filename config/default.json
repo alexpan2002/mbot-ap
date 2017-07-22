@@ -1,6 +1,6 @@
 {
     "appSecret": "",
     "pageAccessToken": "",
-    "validationToken": "",
+    "validationToken": "mbot_very_token",
     "serverURL": ""
 }
