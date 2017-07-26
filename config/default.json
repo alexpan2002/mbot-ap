@@ -1,6 +1,6 @@
 {
-    "appSecret": "",
-    "pageAccessToken": "",
+    "appSecret": "a5177089e60e5c40f044d89687cf971d",
+    "pageAccessToken": "EAACN7MNLWI8BAIYoIhinZCCOPZBejDLwlWSQ47WdRvlC48cKdGlmPvfsn8wPAZBlZAvKG48eH0J8xEsALkfw2ZBFrQueZBSVsPZB73KgvdWnYmZBPcOmq3ZCdOVFF83ZAQd6ChZAG9AWCb1HcjmLKRyYgQLf81LqSPKZBZBXtZArfZCNZCxcVgZDZD",
     "validationToken": "mbot_very_token",
-    "serverURL": ""
+    "serverURL": "https://mbot-ap.herokuapp.com"
 }
