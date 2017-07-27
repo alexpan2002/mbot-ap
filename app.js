@@ -90,6 +90,8 @@ app.post('/webhook', function (req, res) {
     console.log("req.body ", data);
 
     data.entry.forEach(function(pageEntry) {
+    console.log("data.entry", data.entry)
+    
       var pageID = pageEntry.id;
       var timeOfEvent = pageEntry.time;
 
