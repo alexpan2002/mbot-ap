@@ -89,8 +89,7 @@ app.post('/webhook', function (req, res) {
     // There may be multiple if batched
     console.log("req.body ", data);
 
-    console.log("data.entry.changes", data.entry.changes);
-    data.entry.changes.forEach(function(pageEntry) {
+    data.entry.forEach(function(pageEntry) {
     
       var pageID = pageEntry.id;
       var timeOfEvent = pageEntry.time;
