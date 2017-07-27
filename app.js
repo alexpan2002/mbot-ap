@@ -92,11 +92,13 @@ app.post('/webhook', function (req, res) {
       var timeOfEvent = pageEntry.time;  
      console.log("pageEntry = ", pageEntry);
 
-		if (pageEntry.has('changes')){
-			console.log("YES")
-		}	
+	if (pageEntry.changes != ""){
+		pageEntry.changes.forEach(function(item){
+			console.log("item.field",item.field);
+		});
+	}
 
-
+	if (pageEntry.messaging != ""){
       // Iterate over each messaging event
       pageEntry.messaging.forEach(function(messagingEvent) {
         if (messagingEvent.optin) {
@@ -115,6 +117,7 @@ app.post('/webhook', function (req, res) {
           console.log("Webhook received unknown messagingEvent: ", messagingEvent);
         }
       });
+      }
     });
 
     // Assume all went well.
