@@ -87,15 +87,15 @@ app.post('/webhook', function (req, res) {
   if (data.object == 'page') {
     // Iterate over each entry
     // There may be multiple if batched
-    console.log("req.body ", data);
-
     data.entry.forEach(function(pageEntry) {
-    
       var pageID = pageEntry.id;
       var timeOfEvent = pageEntry.time;  
-    console.log("pageEntry = ", pageEntry);
-    console.log("pageID = ",pageID);
-    console.log("timeOfEvent = ",timeOfEvent);
+     console.log("pageEntry = ", pageEntry);
+
+		if (pageEntry.has('changes')){
+			console.log("YES")
+		}	
+
 
       // Iterate over each messaging event
       pageEntry.messaging.forEach(function(messagingEvent) {
