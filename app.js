@@ -92,7 +92,7 @@ app.post('/webhook', function (req, res) {
       var timeOfEvent = pageEntry.time;  
      console.log("pageEntry = ", pageEntry);
 
-	if (pageEntry.changes != ""){
+	if (pageEntry.hasOwnProperty("changes")){
 		pageEntry.changes.forEach(function(item){
 			console.log("item.field",item.field);
 		});
