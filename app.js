@@ -95,6 +95,9 @@ app.post('/webhook', function (req, res) {
 	if (pageEntry.hasOwnProperty("changes")){
 		pageEntry.changes.forEach(function(item){
 			console.log("item.field",item.field);
+			item.value.forEach(function(v){
+				console.log("item.value",v);
+			});
 		});
 	}
 
