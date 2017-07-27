@@ -94,10 +94,11 @@ app.post('/webhook', function (req, res) {
 
 	if (pageEntry.hasOwnProperty("changes")){
 		pageEntry.changes.forEach(function(item){
-			console.log("item.field",item.field);
-			item.value.forEach(function(v){
-				console.log("item.value",v);
-			});
+// 			console.log("item.field",item.field);
+			console.log("item.value",item.value.sender_name);
+			console.log("item.value",item.value.sender_id);
+			console.log("item.value",item.value.message);
+			console.log("item.value",item.value.post_id);
 		});
 	}
 
